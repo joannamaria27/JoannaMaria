@@ -1,4 +1,4 @@
-<div class="container-fluid ">
+<div class="container-fluid">
     <div class="row justify-content-md-center">
 
         <div class="col-md-auto ">
@@ -26,11 +26,18 @@
                     </ng-template>
                 </li>
                 <li ngbNavItem>
+                    <a ngbNavLink class="text-white">Projects</a>
+                    <ng-template ngbNavContent>
+                        <app-projects-page></app-projects-page>
+                    </ng-template>
+                </li>
+                <li ngbNavItem>
                     <a ngbNavLink class="text-white">Contact</a>
                     <ng-template ngbNavContent>
                         <app-contact-page></app-contact-page>
                     </ng-template>
                 </li>
+
             </ul>
             <div [ngbNavOutlet]="nav" class="mt-2"></div>
         </div>

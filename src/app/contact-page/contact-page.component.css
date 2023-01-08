@@ -18,6 +18,12 @@
 
 .info-profile {
     font-size: 1vw;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.info-profile-margin {
+    font-size: 1vw;
     margin-left: 30%;
     margin-right: 30%;
 }

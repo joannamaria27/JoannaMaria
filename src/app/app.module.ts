@@ -9,13 +9,15 @@ import { MyPageComponent } from './my-page/my-page.component';
 import { ContactPageComponent } from './contact-page/contact-page.component';
 
 import { ReactiveFormsModule } from '@angular/forms';
+import { ProjectsPageComponent } from './projects-page/projects-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavigationComponent,
     MyPageComponent,
-    ContactPageComponent
+    ContactPageComponent,
+    ProjectsPageComponent
   ],
   imports: [
     BrowserModule,
