@@ -11,3 +11,7 @@
 
     /* letter-spacing: 2px; */
 }
+
+.image-size {
+    height: max-content;
+}

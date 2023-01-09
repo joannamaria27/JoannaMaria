@@ -3,18 +3,19 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-navigation',
- // standalone: true, 
- // imports: [NgbModule],
   templateUrl: './navigation.component.html',
   styleUrls: ['./navigation.component.css']
 })
 export class NavigationComponent {
-  constructor() {}
+  constructor() { }
 
   openLink(pdfUrl: string) {
-    window.open(pdfUrl , '_blank');
+    window.open(pdfUrl, '_blank');
   }
   copy() {
     navigator.clipboard.writeText(`joan.mk7@gmail.com`);
-  } 
+  }
+  changeColor(color: string) {
+    document.body.style.background = color;
+  }
 }

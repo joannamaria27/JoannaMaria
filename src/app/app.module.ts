@@ -10,6 +10,7 @@ import { ContactPageComponent } from './contact-page/contact-page.component';
 
 import { ReactiveFormsModule } from '@angular/forms';
 import { ProjectsPageComponent } from './projects-page/projects-page.component';
+import { EducationPageComponent } from './education-page/education-page.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ProjectsPageComponent } from './projects-page/projects-page.component';
     NavigationComponent,
     MyPageComponent,
     ContactPageComponent,
-    ProjectsPageComponent
+    ProjectsPageComponent,
+    EducationPageComponent
   ],
   imports: [
     BrowserModule,

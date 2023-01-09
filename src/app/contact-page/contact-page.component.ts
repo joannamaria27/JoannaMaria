@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Renderer2 } from '@angular/core';
 
 
 @Component({
@@ -11,6 +11,5 @@ export class ContactPageComponent {
   email = 'joan.mk7@gmail.com';
   phoneNumber = '509002427';
   city = 'Warsaw';
-
 
 }

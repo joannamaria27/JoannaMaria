@@ -1,12 +1,13 @@
-<div class="main">
+<div class="main container">
     <p class="title">P R O J E C T S</p>
+    <ngb-carousel class="carousel-dark container-fluid" *ngIf="images">
 
-    <ngb-carousel *ngIf="images">
+
         <ng-template ngbSlide *ngFor="let img of images; index as i">
-            <div class="picsum-img-wrapper">
+            <div class="picsum-img-wrapper container">
                 <button type="button" class="btn" (click)="isCollapsed = ! isCollapsed"
-                    [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample"><img class="img-fluid"
-                        [src]="img" />
+                    [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample"><img
+                        class=" image-size img-fluid" [src]="img" />
                 </button>
             </div>
             <div class="carousel-caption">
