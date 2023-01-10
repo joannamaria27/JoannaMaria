@@ -6,3 +6,11 @@
     margin-top: 10vw;
     color: white;
 }
+
+.backgroundBlack {
+    background-image: linear-gradient(to bottom right, rgb(68, 60, 109), rgb(119, 137, 216));
+}
+
+.backgroundWhite {
+    background-color: rgb(33, 34, 44);
+}

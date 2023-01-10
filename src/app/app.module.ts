@@ -12,6 +12,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { ProjectsPageComponent } from './projects-page/projects-page.component';
 import { EducationPageComponent } from './education-page/education-page.component';
 import { SkillsPageComponent } from './skills-page/skills-page.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { SkillsPageComponent } from './skills-page/skills-page.component';
     AppRoutingModule,
     NgbModule,
     ReactiveFormsModule,
+    FontAwesomeModule,
     
   ],
   providers: [],

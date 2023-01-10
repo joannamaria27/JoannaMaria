@@ -1,4 +1,6 @@
-<div class="container-fluid">
+<div class="container-fluid ">
+    <!-- [ngClass]="backgroundClass" -->
+
     <div class="row justify-content-md-center">
 
         <div class="col-md-auto ">
@@ -21,8 +23,15 @@
             <ul ngbNav #nav="ngbNav" class="justify-content-end navbar-expand-lg navbar fs-6">
                 <li ngbNavItem>
                     <a ngbNavLink class="text-white">Me</a>
+                    <!-- (click)='changeColor("backgroundWhite")' -->
                     <ng-template ngbNavContent>
                         <app-my-page></app-my-page>
+                    </ng-template>
+                </li>
+                <li ngbNavItem>
+                    <a ngbNavLink class="text-white">Skills</a>
+                    <ng-template ngbNavContent>
+                        <app-skills-page></app-skills-page>
                     </ng-template>
                 </li>
                 <li ngbNavItem>

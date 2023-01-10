@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { withLatestFrom } from 'rxjs';
 
 @Component({
   selector: 'app-navigation',
@@ -7,7 +8,12 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
   styleUrls: ['./navigation.component.css']
 })
 export class NavigationComponent {
+
+  //backgroundClass: 'backgroundBlack' | 'backgroundWhite' = 'backgroundBlack';
+
   constructor() { }
+
+
 
   openLink(pdfUrl: string) {
     window.open(pdfUrl, '_blank');
@@ -15,7 +21,10 @@ export class NavigationComponent {
   copy() {
     navigator.clipboard.writeText(`joan.mk7@gmail.com`);
   }
-  changeColor(color: string) {
-    document.body.style.background = color;
-  }
+  // changeColor(colorClass: 'backgroundBlack' | 'backgroundWhite') {
+  //   this.backgroundClass = colorClass;
+  // }
+
+
+
 }
