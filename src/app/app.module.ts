@@ -11,6 +11,7 @@ import { ContactPageComponent } from './contact-page/contact-page.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ProjectsPageComponent } from './projects-page/projects-page.component';
 import { EducationPageComponent } from './education-page/education-page.component';
+import { SkillsPageComponent } from './skills-page/skills-page.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { EducationPageComponent } from './education-page/education-page.componen
     MyPageComponent,
     ContactPageComponent,
     ProjectsPageComponent,
-    EducationPageComponent
+    EducationPageComponent,
+    SkillsPageComponent
   ],
   imports: [
     BrowserModule,
