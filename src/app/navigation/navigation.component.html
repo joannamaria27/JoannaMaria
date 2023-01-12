@@ -22,39 +22,30 @@
         <div class="col ">
             <ul ngbNav #nav="ngbNav" class="justify-content-end navbar-expand-lg navbar fs-6">
                 <li ngbNavItem>
-                    <a ngbNavLink class="text-white">Me</a>
+                    <a ngbNavLink [routerLink]="['/']" class="text-white">Me</a>
                     <!-- (click)='changeColor("backgroundWhite")' -->
-                    <ng-template ngbNavContent>
-                        <app-my-page></app-my-page>
-                    </ng-template>
                 </li>
                 <li ngbNavItem>
-                    <a ngbNavLink class="text-white">Skills</a>
-                    <ng-template ngbNavContent>
-                        <app-skills-page></app-skills-page>
-                    </ng-template>
+                    <a ngbNavLink [routerLink]="['/skills']" class="text-white">Skills</a>
                 </li>
                 <li ngbNavItem>
-                    <a ngbNavLink class="text-white">Education</a>
-                    <ng-template ngbNavContent>
-                        <app-education-page></app-education-page>
-                    </ng-template>
+                    <a ngbNavLink [routerLink]="['/education']" class="text-white">Education</a>
                 </li>
                 <li ngbNavItem>
-                    <a ngbNavLink class="text-white">Projects</a>
-                    <ng-template ngbNavContent>
-                        <app-projects-page></app-projects-page>
-                    </ng-template>
+                    <a ngbNavLink [routerLink]="['/projects']" class="text-white">Projects</a>
                 </li>
                 <li ngbNavItem>
-                    <a ngbNavLink class="text-white">Contact</a>
-                    <ng-template ngbNavContent>
-                        <app-contact-page></app-contact-page>
-                    </ng-template>
+                    <a ngbNavLink [routerLink]="['/contact']" class="text-white">Contact</a>
+
                 </li>
 
             </ul>
-            <div [ngbNavOutlet]="nav" class="mt-2"></div>
+            <div [ngbNavOutlet]="nav" class="mt-2">
+
+            </div>
+            <div class="inner-outlet">
+                <router-outlet></router-outlet>
+            </div>
         </div>
 
     </div>
