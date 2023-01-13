@@ -13,6 +13,7 @@ import { ProjectsPageComponent } from './projects-page/projects-page.component';
 import { EducationPageComponent } from './education-page/education-page.component';
 import { SkillsPageComponent } from './skills-page/skills-page.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     NgbModule,
     ReactiveFormsModule,
     FontAwesomeModule,
-    
+    HttpClientModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -15,3 +15,12 @@
 .image-size {
     height: max-content;
 }
+
+.profile {
+    font-size: 1.5vw;
+}
+
+.info-profile {
+    font-size: 1vw;
+
+}
